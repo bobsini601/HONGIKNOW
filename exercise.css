@@ -1,0 +1,157 @@
+a{
+    text-decoration: none;
+    color:black;
+}
+ul, ol{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+header{
+    display: inline-block;
+    width: 1350px;
+}
+.mybox{
+    width: 520px;
+    height: 100px;
+    background-color: rgb(154, 185, 211);
+    display: block;
+    float:right;
+    margin-top: 100px;
+}
+.container{
+    display:flex;
+}
+.article {
+    width:980px;
+    height: 900px;
+    display:inline-block;
+    font-size: 15px;
+}
+.article  > div{
+    width: 280px;
+    height: 280px;
+    background-color: rgba(9,31,64,1);
+    color: white;
+    margin:10px;
+    padding:35px 15px;
+    float: left;  
+    box-sizing: border-box; 
+    border-radius: 4%; 
+    margin: 10px 20px;   
+    box-shadow: 0px 0px 10px #aaa;   
+}
+.article>div:nth-child(2){
+    /*filter: blur(5px);*/
+    fill: rgba(104,104,104,1);
+    z-index:10;
+}
+.contentbox{
+    position: absolute;
+    top:35px;
+    left:15px;
+    margin:35px 15px 35px 15px;
+    z-index:20;
+    transform: translate(-50%, -50%);
+}
+.article>div:nth-child(1){
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+nav {
+    display: block;
+    position: relative;
+    width: 180px;
+    height: 720px;
+    left: 1px;
+    top: 0px;
+    overflow: visible;
+    border-left-style: groove;
+    border-bottom-style: groove;
+}
+nav > ul {
+    text-align: center;
+}
+nav li a:hover{
+    text-decoration: underline;
+}
+nav li {
+    display:block;
+    padding: 0 30px;
+    line-height: 60px;
+    height:65.5px;
+    /*border:1px solid black;*/
+}
+.sidebar{
+    width:200px;
+    height: 650px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.search{
+    width: 200px;
+    height: 40px;
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+    border:1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+input{
+    border: 0px;
+    width:140px;
+    line-height:35px;
+    font-size: 17px;
+}
+#side1{
+    margin-top: 20px;
+    position: relative;
+    width: 200px;
+    height: 280px;
+    overflow: visible;
+}
+#side2{
+    width: 200px;
+    height:220px;
+}
+#banner{
+    width: 200px;
+    height: 140px;
+    overflow: visible;
+    border-right-style: groove;
+    border-bottom-style: groove;
+    margin-top: 10px;
+    text-align: center;
+}
+#hello{
+    height: 100px;
+}
+.button{
+    background-color: rgba(216,216,216,1);
+    width: 90px;
+    height: 27px;
+    border-radius: 5rem;
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.sidebar ul{
+    border-right-style: groove;
+    border-bottom-style: groove;
+}
+.sidebar li {
+    display:block;
+    padding: 15px;
+}
+.sidebar li:hover{
+    text-decoration:underline;
+}

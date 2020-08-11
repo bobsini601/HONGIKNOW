@@ -1,0 +1,131 @@
+a{
+    text-decoration: none;
+    color:black;
+}
+ul, ol{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+header{
+    display: inline-block;
+    width: 1350px;
+}
+.mybox{
+    width: 520px;
+    height: 100px;
+    background-color: rgb(154, 185, 211);
+    display: inline-flex;
+    float: right;
+    margin-top: 100px;
+}
+.container{
+    display:flex;
+}
+.article {
+    width:980px;
+    height: 900px;
+    display:inline-block;
+    font-size: 15px;
+}
+.article div{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(9,31,64,1);
+    color: white;
+    margin:10px;
+    float: left;  
+    padding: 35px 15px 35px 15px;
+    box-sizing: border-box; 
+    border-radius: 4%; 
+    margin: 10px 20px;
+    box-shadow: 5px 5px 5px #aaa;   
+}
+.nav {
+    display: block;
+    position: relative;
+    width: 280px;
+    height: 720px;
+    left: 1px;
+    top: 0px;
+    overflow: visible;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: cornflowerblue;
+}
+.nav > ul {
+    width: 280px;
+    text-align: center;
+    font-size: 30px;
+}
+nav li a:hover{
+    text-decoration: underline;
+}
+nav li {
+    display:block;
+    padding: 0 30px;
+    line-height: 60px;
+    border:1px solid black;
+}
+.sidebar{
+    width:200px;
+    height: 650px;
+    box-sizing: border-box;
+    text-align: center;
+}
+input{
+    width: 200px;
+    height: 40px;
+    fill: rgba(255,255,255,1);
+    stroke: rgba(0,0,0,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+    border-radius: 5px;
+    font-size: 20px;
+}
+#side1{
+    margin-top: 20px;
+    position: relative;
+    width: 200px;
+    height: 280px;
+    overflow: visible;
+}
+#side2{
+    width: 200px;
+    height:220px;
+}
+#banner{
+    width: 200px;
+    height: 140px;
+    overflow: visible;
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+}
+#hello{
+    height: 100px;
+}
+.button{
+    background-color: rgba(216,216,216,1);
+    width: 90px;
+    height: 27px;
+    border-radius: 5rem;
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.sidebar li {
+    display:block;
+    padding: 15px;
+    border:1px solid black;
+}
+
+.sidebar li:hover{
+    text-decoration:underline;
+}
