@@ -8,19 +8,24 @@ ul, ol{
     padding:0;
 }
 header{
-    display: inline-block;
-    width: 1350px;
+    height: 200px; 
+    display: flex;
+    justify-content: center;
 }
 .mybox{
     width: 520px;
     height: 100px;
-    background-color: rgb(154, 185, 211);
-    display: block;
-    float:right;
-    margin-top: 100px;
+    margin-top: 40px;
+    background-color:white;
+    box-shadow: 0px 0px 10px #aaa;   
+}
+.mybox > div {
+    display: inline-block;
+    margin: 5px;
 }
 .container{
     display:flex;
+    justify-content: center;
 }
 .article {
     width:980px;
@@ -35,7 +40,7 @@ header{
     color: white;
     margin:10px;
     padding:35px 15px;
-    float: left;  
+    float: left; 
     box-sizing: border-box; 
     border-radius: 4%; 
     margin: 10px 20px;   
@@ -47,7 +52,6 @@ header{
     z-index:10;
 }
 .contentbox{
-    position: absolute;
     top:35px;
     left:15px;
     margin:35px 15px 35px 15px;
@@ -64,13 +68,12 @@ nav {
     position: relative;
     width: 180px;
     height: 720px;
-    left: 1px;
-    top: 0px;
     overflow: visible;
     border-left-style: groove;
     border-bottom-style: groove;
 }
 nav > ul {
+    width:180px;
     text-align: center;
 }
 nav li a:hover{
@@ -129,9 +132,6 @@ input{
     margin-top: 10px;
     text-align: center;
 }
-#hello{
-    height: 100px;
-}
 .button{
     background-color: rgba(216,216,216,1);
     width: 90px;
@@ -154,4 +154,7 @@ input{
 }
 .sidebar li:hover{
     text-decoration:underline;
+}
+#blank{
+    width:500px;
 }
