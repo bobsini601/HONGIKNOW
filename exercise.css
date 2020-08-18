@@ -12,6 +12,9 @@ header{
     display: flex;
     justify-content: center;
 }
+#blank{
+    width:390px;
+}
 .mybox{
     width: 520px;
     height: 100px;
@@ -47,21 +50,61 @@ header{
     box-shadow: 0px 0px 10px #aaa;   
 }
 .article>div:nth-child(2){
-    /*filter: blur(5px);*/
-    fill: rgba(104,104,104,1);
-    z-index:10;
+    position: relative;
+    background: url(view.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: hidden;
 }
+.article>div:nth-child(n+4){
+    position: relative;
+    background: url(view.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    overflow: hidden;
+}
+.photo {
+    background: url(view.png) center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 280px;
+    height: 280px;
+    -webkit-filter: blur(5px); 
+    -moz-filter: blur(5px); 
+    -o-filter: blur(5px); 
+    -ms-filter: blur(5px); 
+    filter: blur(5px);
+    z-index: -1;
+}
+
 .contentbox{
-    top:35px;
+/*    top:35px;
     left:15px;
     margin:35px 15px 35px 15px;
     z-index:20;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
+    height: 180px;
+    text-align: center;
+    z-index: 1;
 }
 .article>div:nth-child(1){
     background-color: white;
     color:black;
     border: 1px solid black;
+}
+.tabs{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between; /*양쪽정렬*/
+    width:240px;
+    box-sizing: border-box;
+    color:white;
 }
 nav {
     display: block;
@@ -133,7 +176,8 @@ input{
     text-align: center;
 }
 .button{
-    background-color: rgba(216,216,216,1);
+    background-color: white;
+    border: 1px solid rgba(9,31,64,1);
     width: 90px;
     height: 27px;
     border-radius: 5rem;
@@ -154,7 +198,4 @@ input{
 }
 .sidebar li:hover{
     text-decoration:underline;
-}
-#blank{
-    width:500px;
 }
