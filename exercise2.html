@@ -4,21 +4,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>홍익나우</title>
-        <link rel="stylesheet" href="exercise.css"/>
+        <link rel="stylesheet" href="exercise2.css"/>
+        <script src="https://kit.fontawesome.com/ce4092c855.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="wrap">
             <header>
-                <a href="exercise.html"><img src="color로고.png" width="500"></a>
-                <div class="mybox">
-                    <div id="hello">
-                        <img src="id.png" width="57px">
-                        <div id="mytext">홍대생1님 안녕하세요!</br><span style="font-size: 12px">김홍익, 자율전공학부</span></div>
-                        <div class="button"><a href="exercise2.html">내 정보</a></div>
-                        <div class="button"><a href="">로그아웃</a></div>
+                <div id=logo">
+                    <a href="exercise.html"><img src="color로고.png" width="500"></a>
+                </div>
+                <div id="blank"></div>
+                <div id=right>
+                    <div class="mybox">                  
+                            <div width="100px"><img src="profile.png" width="57px"></div>
+                            <div id="mytext">홍대생1님 안녕하세요!</br><span style="font-size: 12px">김홍익, 자율전공학부</span></div>
+                            <div>
+                                <div class="button"><a href="exercise2.html">내 정보</a></div>
+                                <div class="button"><a href="">로그아웃</a></div>    
+                            </div>                
                     </div>
                 </div>
-
             </header>
             <div class="container">
                 <nav>
@@ -37,10 +42,45 @@
                     </ul>
                 </nav>
                 <div class="article">
-                <div id="mypage">마이페이지 로그인정보와 이메일 등등</div>
+                    <div class="mypage"> 
+                        <div class="prof_img">
+                            <div id="profile">
+                                <img src="profile.png" width="135px">
+                            </div>    
+                            <div>
+                                김홍익</br>
+                                BXXXXXX, 자율전공학부
+                            </div>
+                        </div>
+                        <div class="prof_input">
+                            <form action="mypage.php" autocomplete="on">
+                                <p><label id="inputtxt">아이디</label> <input type="text" name="userid" maxlength="8" placeholder="hongik123"  required pattern="[a-zA-Z].+[0-9]"id="myblank"></p>
+                                <p><label id="inputtxt">비밀번호</label> <input type="password" name="password" autocomplete="off" placeholder="pw를 입력해주세요"id="myblank"></p>
+                                <p><label id="inputtxt">이메일</label> <input type="email" name="email" placeholder="hongik123@hongik.ac.kr"id="myblank"></p>
+                                <p><label id="inputtxt">닉네임</label> <input type="text" maxLength="8" placeholder="홍대생1"  id="myblank"></p>
+                                <p><label id="inputtxt">인증</label>  
+                                    <label class="toggle">
+                                            <span class="center">
+                                                <input type="checkbox" name="" id="yes" checked>
+                                            </span>
+                                    </label>
+                                </p>
+                                <input type="submit" value="적용">
+                            </form>
+                        </div>
+                        <div class="prof_but">
+                            <div class="button"><a href="exercise2.html">적용</a></div>
+                            <div class="button"><a href="">취소</a></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="sidebar">
-                    <input type="text" name="search" autofocus >
+                    <div class="search">
+                        <div id="searchbox">
+                            <input type="search" name="search" autofocus >
+                            <i class="fas fa-search"></i>
+                            </div>
+                        </div>
                     <div id="side1">
                         <ul>
                             <li>커뮤니티</li>
