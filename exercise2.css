@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 a{
     text-decoration: none;
     color:black;
@@ -16,14 +19,29 @@ input{
     border: 1px solid #c6c6c6;
     border-radius:0.5rem;
     width:282px;
+    height: 41px;
+    line-height:20px;
+    font-size: 17px;
+    padding-left: 5px;
+}
+#idtxt{
+    border: 1px solid #c6c6c6;
+    border-radius:0.5rem;
+    width:282px;
+    height: 41px;
     line-height:35px;
     font-size: 17px;
+    padding-left: 5px;
+    padding-top:5px;
 }
 input[type="search"]{
     border: 0px;
     width:140px;
-    line-height:35px;
+    padding-left:3px;
+    box-sizing: border-box;
     font-size: 17px;
+    border-radius: 0px;
+    height: 28px;
 }
 input[type="checkbox"]
 {
@@ -57,6 +75,9 @@ input[type="checkbox"]:before{
 input:checked[type="checkbox"]:before{
     left: 20px;
 }
+td{
+    height: 60px;
+}
 #blank{
     width:390px;
 }
@@ -66,10 +87,15 @@ input:checked[type="checkbox"]:before{
     margin-top: 40px;
     background-color:white;
     box-shadow: 0px 0px 10px #aaa;   
+    text-align: center;
+    line-height: 27px;
 }
 .mybox > div {
     display: inline-block;
-    margin: 5px;
+    margin: 5px 2px;
+}
+.mybox > div:nth-child(2){
+    margin: 0px 5px;
 }
 .container{
     display:flex;
@@ -79,39 +105,95 @@ input:checked[type="checkbox"]:before{
     width:980px;
     height: 900px;
     font-size: 20px;
+    display:flex;
+    justify-content: center;
 }
-.mypage {
-    width: 920px;
-    height: 660px;
-    margin:10px;
-    border-radius: 4%;
-    border: 1px solid black; 
+@media(min-width:1335px){
+    .mypage {
+        width: 920px;
+        height: 660px;
+        margin:10px;
+        border-radius: 1rem;
+        border: 1px solid black; 
+    }
+    .prof_img {
+        padding-top: 211px;
+        width: 420px;
+        height: 300px;
+        text-align: center;
+    }
+    .prof_but{
+        justify-content: center;
+        padding-top:145px;
+    }
+    .sbutton{
+        background-color: white;
+        border: 1px solid rgba(9,31,64,1);
+        width: 92px;
+        height: 39px;
+        border-radius: 5rem;
+        padding-top: 1px;
+        padding-bottom: 4px;
+        text-align: center;
+        display: inline-block;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-top: 10px;
+        position: absolute;
+        left: 42%;
+    }
+    .prof_but .button{
+        position: absolute;
+        left:50%;
+    }
+}
+@media(max-width:1334px){
+    .mypage {
+        width: 450px;
+        height: 660px;
+        margin:10px;
+        border-radius: 1rem;
+        border: 1px solid black; 
+    }
+    .prof_img {
+        padding-top:50px;
+        width: 420px;
+        height: 100px;
+        text-align: center;
+    }
+    .sbutton{
+        background-color: white;
+        border: 1px solid rgba(9,31,64,1);
+        width: 92px;
+        height: 39px;
+        border-radius: 5rem;
+        padding-top: 1px;
+        padding-bottom: 3px;
+        text-align: center;
+        font-size: 15px;
+        margin-left: 100px;
+        margin-top: 10px;
+        position: absolute;
+    }
+    .prof_but .button{
+        margin-left:200px;
+    }
 }
 .mypage > div{
-    display: inline-block;
+    display: block;
+    float: left;
 }
 .prof_input > label{
     width:100px;
     text-align: right;
     margin-right:10px;
 }
-.prof_img {
-    width: 420px;
-    height: 300px;
-    text-align: center;
-}
-
 .prof_input{
     padding-top:100px;
     width:460px;
     height: 400px;
     padding:20px 10px;
     margin-top:100px;
-}
-.prof_but{
-    width: 920px;
-    justify-content: center;
-    padding-left: 350px;
 }
 nav {
     display: block;
@@ -121,6 +203,7 @@ nav {
     overflow: visible;
     border-left-style: groove;
     border-bottom-style: groove;
+    font-size: 19px;
 }
 nav > ul {
     width:180px;
@@ -129,32 +212,54 @@ nav > ul {
 nav li a:hover{
     text-decoration: underline;
 }
+nav li:hover{
+    background-color:#ACBFD9;
+}
 nav li {
     display:block;
     padding: 0 30px;
     line-height: 60px;
     height:65.5px;
-    /*border:1px solid black;*/
+}
+nav > ul :hover .sub{
+    left: 180px;
+    display:inline-block;
+    z-index: 100;
+    transition-property: all;
+    transition-delay: .5s;
+}
+.sub {
+    display:none;
+    position:absolute;
+    padding: 0px;
+    background-color:white;
+    width: 80%;
+    left: -0.5%;
+    border: 0px;
 }
 .sidebar{
     width:200px;
     height: 650px;
     box-sizing: border-box;
     text-align: center;
+    font-size: 19px;
+}
+#onlywhite:hover{
+    text-decoration: none;
+    background-color: white;
+}
+.sidebar > div {
+    margin-top:10px;
 }
 .search{
     width: 200px;
-    height: 40px;
+    height: 35px;
     fill: rgba(255,255,255,1);
-    stroke: rgba(0,0,0,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-    border:1px solid black;
-    border-radius: 5px;
+    border-bottom:1px solid black;
     font-size: 20px;
+}
+#searchbox{
+    display: inline-block;
 }
 #side1{
     margin-top: 20px;
@@ -182,16 +287,30 @@ nav li {
     width: 90px;
     height: 27px;
     border-radius: 5rem;
-    padding-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 10.5px;
+}
+.buttonlogout{
+    background-color:  rgba(9,31,64,1);
+    border: 1px solid rgba(9,31,64,1);
+    width: 90px;
+    height: 27px;
+    border-radius: 5rem;
+    padding-top: 8px;
+    padding-bottom: 3px;
     text-align: center;
     display: inline-block;
     font-size: 15px;
     margin-right: 10px;
     margin-top: 10px;
 }
-.button :hover{
-    background-color: rgba(9,31,64,1);
-    color: white;
+.buttonlogout >a{
+    color:white;
 }
 .sidebar ul{
     border-right-style: groove;
@@ -203,6 +322,11 @@ nav li {
 }
 .sidebar li:hover{
     text-decoration:underline;
+    background-color:#ACBFD9;
+}
+#onlywhite:hover{
+    text-decoration: none;
+    background-color: white;
 }
 #profile{
     top:0px;
