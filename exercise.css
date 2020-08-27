@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 a{
     text-decoration: none;
     color:black;
@@ -20,21 +23,42 @@ header{
     height: 100px;
     margin-top: 40px;
     background-color:white;
-    box-shadow: 0px 0px 10px #aaa;   
+    box-shadow: 0px 0px 10px #aaa;
+    text-align:center;   
+    line-height: 27px;
 }
 .mybox > div {
     display: inline-block;
-    margin: 5px;
+    margin: 5px 2px;
+}
+.mybox > div:nth-child(2){
+    margin: 0px 5px;
 }
 .container{
     display:flex;
     justify-content: center;
 }
+@media(min-width:1358px){
 .article {
     width:980px;
     height: 900px;
     display:inline-block;
     font-size: 15px;
+    }
+}
+@media(max-width:1357px){
+    .article {
+        width:650px;
+        display:inline-block;
+        font-size: 15px;
+    }
+}
+@media(max-width:1036px){
+    .article {
+        width:340px;
+        display:inline-block;
+        font-size: 15px;
+    }
 }
 .article  > div{
     width: 280px;
@@ -45,7 +69,7 @@ header{
     padding:35px 15px;
     float: left; 
     box-sizing: border-box; 
-    border-radius: 4%; 
+    border-radius: 1rem; 
     margin: 10px 20px;   
     box-shadow: 0px 0px 10px #aaa;  
 }
@@ -96,9 +120,33 @@ header{
     display: flex;
     flex-direction:row;
     justify-content:space-between;  /* 양쪽정렬 */
-    width:240px;
+    margin-left:10px;
+    width:230px;
     box-sizing: border-box;
     color:white;
+}
+.thumb{
+    width:50px;
+    line-height: 30px;
+    display: flex;
+    float: left;
+}
+#thumb_num{
+    width: 30px;
+    line-height: 30px;
+}
+#thumbimg{
+    background: url(icon_thumb2.png) center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+#thumbimg:hover{
+    background: url(icon_thumb.png) center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
 }
 nav {
     display: block;
@@ -108,10 +156,30 @@ nav {
     overflow: visible;
     border-left-style: groove;
     border-bottom-style: groove;
+    font-size: 19px;
 }
 nav > ul {
     width:180px;
     text-align: center;
+}
+nav > ul :hover .sub{
+    left: 180px;
+    display:inline-block;
+    z-index: 100;
+    transition-property: all;
+    transition-delay: .5s;
+}
+.sub {
+    display:none;
+    position:absolute;
+    padding: 0px;
+    background-color:white;
+    width: 80%;
+    left: -0.5%;
+    border: 0px;
+}
+nav li:hover{
+    background-color:#ACBFD9;
 }
 nav li a:hover{
     text-decoration: underline;
@@ -128,25 +196,34 @@ nav li {
     height: 650px;
     box-sizing: border-box;
     text-align: center;
+    font-size:19px;
+}
+.sidebar > div {
+    margin-top:10px;
+}
+.sidebar li:hover{
+    background-color:#ACBFD9;
+}
+#onlywhite:hover{
+    text-decoration: none;
+    background-color: white;
 }
 .search{
     width: 200px;
-    height: 40px;
+    height: 35px;
     fill: rgba(255,255,255,1);
-    stroke: rgba(0,0,0,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-    border:1px solid black;
-    border-radius: 5px;
+    border-bottom:1px solid black;
     font-size: 20px;
+}
+#searchbox{
+    display: inline-block;
 }
 input{
     border: 0px;
     width:140px;
-    line-height:35px;
+    height: 28px;
+    padding-left:3px;
+    box-sizing: border-box;
     font-size: 17px;
 }
 #side1{
@@ -175,12 +252,27 @@ input{
     width: 90px;
     height: 27px;
     border-radius: 5rem;
-    padding-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 15px;
+}
+.buttonlogout{
+    background-color:  rgba(9,31,64,1);
+    border: 1px solid rgba(9,31,64,1);
+    width: 90px;
+    height: 27px;
+    border-radius: 5rem;
+    padding-top: 8px;
+    padding-bottom: 3px;
     text-align: center;
     display: inline-block;
     font-size: 15px;
     margin-right: 10px;
     margin-top: 10px;
+}
+.buttonlogout >a{
+    color:white;
 }
 .sidebar ul{
     border-right-style: groove;
