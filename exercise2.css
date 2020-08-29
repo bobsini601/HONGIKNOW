@@ -78,8 +78,11 @@ input:checked[type="checkbox"]:before{
 td{
     height: 60px;
 }
-#blank{
+header > #blank{
     width:390px;
+}
+header > #logo{
+padding-top: 50px;
 }
 .mybox{
     width: 520px;
@@ -100,10 +103,11 @@ td{
 .container{
     display:flex;
     justify-content: center;
+    border-bottom: 1px groove rgb(175, 173, 173) ;
 }
 .article {
     width:980px;
-    height: 900px;
+    height: 800px;
     font-size: 20px;
     display:flex;
     justify-content: center;
@@ -111,7 +115,7 @@ td{
 @media(min-width:1335px){
     .mypage {
         width: 920px;
-        height: 660px;
+        height: 720px;
         margin:10px;
         border-radius: 1rem;
         border: 1px solid black; 
@@ -127,7 +131,8 @@ td{
         padding-top:145px;
     }
     .sbutton{
-        background-color: white;
+        background-color: rgba(9,31,64,1);
+        color: white;
         border: 1px solid rgba(9,31,64,1);
         width: 92px;
         height: 39px;
@@ -162,7 +167,8 @@ td{
         text-align: center;
     }
     .sbutton{
-        background-color: white;
+        background-color: rgba(9,31,64,1);
+        color: white;
         border: 1px solid rgba(9,31,64,1);
         width: 92px;
         height: 39px;
@@ -208,9 +214,6 @@ nav {
 nav > ul {
     width:180px;
     text-align: center;
-}
-nav li a:hover{
-    text-decoration: underline;
 }
 nav li:hover{
     background-color:#ACBFD9;
@@ -274,12 +277,20 @@ nav > ul :hover .sub{
 }
 #banner{
     width: 200px;
-    height: 140px;
+    height: 122px;
     overflow: visible;
     border-right-style: groove;
     border-bottom-style: groove;
     margin-top: 10px;
     text-align: center;
+    overflow: hidden;
+}
+#banner img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+#banner:hover img{
+    transform: scale(1.1);
 }
 .button{
     background-color: white;
@@ -321,7 +332,6 @@ nav > ul :hover .sub{
     padding: 15px;
 }
 .sidebar li:hover{
-    text-decoration:underline;
     background-color:#ACBFD9;
 }
 #onlywhite:hover{
@@ -330,4 +340,15 @@ nav > ul :hover .sub{
 }
 #profile{
     top:0px;
+}
+footer{
+    display: flex;
+    float:right;
+    padding: 20px;
+}
+.icon_list li{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
 }
