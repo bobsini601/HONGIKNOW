@@ -131,9 +131,6 @@ nav > ul :hover .sub{
 nav li:hover{
     background-color:#ACBFD9;
 }
-nav li a:hover{
-    text-decoration: underline;
-}
 nav li {
     display:block;
     padding: 0 30px;
@@ -251,9 +248,6 @@ nav > ul :hover .sub{
 .sidebar li {
     display:block;
     padding: 15px;
-}
-.sidebar li:hover{
-    text-decoration:underline;
 }
 #profile{
     top:0px;
