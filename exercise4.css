@@ -46,8 +46,11 @@ input[type="search"]{
 td{
     height: 60px;
 }
-#blank{
+header > #blank{
     width:390px;
+}
+header > #logo{
+padding-top: 50px;
 }
 .mybox{
     width: 520px;
@@ -72,54 +75,27 @@ td{
 }
 .article {
     width:980px;
-    height: 800px;
+    height: 1000px;
     font-size: 20px;
 }
-@media(min-width:1335px){
-    .ablock {
-        width: 820px;
-        height: 500px;
-        border-radius: 1rem;
-        border: 1px solid black; 
-        padding:80px 80px;
-    }
-}
-@media(max-width:1334px){
-    .ablock {
-        width: 500px;
-        height: 660px;
-        margin:10px;
-        border-radius: 1rem;
-        border: 1px solid black; 
-        padding-top:100px;
-        padding-left: 80px;
-    }
+.ablock {
+    width: 820px;
+    height: 800px;
+    border-radius: 1rem;
+    border: 1px solid black; 
+    padding:80px 80px;
 }
 .ablock > div{
     display: block;
     float: left;
 }
 .intro{
-    height: 220px;
+    height: 180px;
 }
-.logobox{
-    display: block;
-    position: absolute;
-    margin-top: 40px;
-    z-index: -1;
-}
-#guideline{
-    display: none;
-    overflow: hidden;
-}
-#guidetxt:hover #guideline{
+#guideline{    
+    margin-top: 10px;
     display: flex;
-    float: left;
-    position: absolute;
-    top: 230px;
-    left: 23%;
     justify-content: center;
-    z-index: 10;
 }
 nav {
     display: block;
@@ -222,12 +198,20 @@ nav > ul :hover .sub{
 }
 #banner{
     width: 200px;
-    height: 140px;
+    height: 122px;
     overflow: visible;
     border-right-style: groove;
     border-bottom-style: groove;
     margin-top: 10px;
     text-align: center;
+    overflow: hidden;
+}
+#banner img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+#banner:hover img{
+    transform: scale(1.1);
 }
 .button{
     background-color: white;
