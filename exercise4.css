@@ -103,7 +103,19 @@ td{
     height: 220px;
 }
 .logobox{
+    display: block;
+    position: absolute;
     margin-top: 40px;
+    z-index: -1;
+}
+#guideline{
+    display: none;
+    overflow: hidden;
+}
+#guidetxt:hover #guideline{
+    display: flex;
+    float: left;
+    z-index: 10;
 }
 nav {
     display: block;
