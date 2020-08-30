@@ -2,10 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <title>홍익나우</title>
         <link rel="stylesheet" href="exercise.css"/>
         <script src="https://kit.fontawesome.com/ce4092c855.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function testInnerHTML(){
+                var str = '253';
+                document.getElementById("thumb_num").innerHTML = str;
+            }
+            function comment(){
+                var str = '댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글댓글';
+                document.getElementById("cmt").innerHTML = str+"</br>"+"<b><font color='gray'>"+'더보기'+"</font></b>"+"</br>"+str+"<b><font color='gray'>"+"</br>"+'더보기'+"</font></b>";
+            }
+        </script>
     </head>
     <body>
         <div class="wrap">
@@ -31,89 +41,89 @@
                     <ul>
                     <li id="onlywhite"><strong>질문답변</strong></li>
                     <li>
-                        <a href="">공과대학</a>
+                        <a href="" id="univ">공과대학</a>
                         <ul class="sub">
-                            <li>토목</li>
-                            <li>전전</li>
-                            <li>컴공</li>
-                            <li>산공</li>
-                            <li>신소재</li>
-                            <li>화공</li>
-                            <li>기계</li>
+                            <li><a href="" >토목</a></li>
+                            <li><a href="" >전전</a></li>
+                            <li><a href="" >컴공</a></li>
+                            <li><a href="" >산공</a></li>
+                            <li><a href="" >신소재</a></li>
+                            <li><a href="" >화공</a></li>
+                            <li><a href="" >기계</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">건축대학</a>
+                        <a href="" id="univ">건축대학</a>
                         <ul class="sub">
-                            <li>건축</li>
-                            <li>실건</li>
-                            <li>도시</li>
+                            <li><a href="">건축</a></li>
+                            <li><a href="">실건</a></li>
+                            <li><a href="">도시</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">경영대학</a>
+                        <a href="" id="univ">경영대학</a>
                         <ul class="sub">
-                            <li>경영</li>
+                            <li><a href="">경영</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">문과대학</a>
+                        <a href="" id="univ">문과대학</a>
                         <ul class="sub">
-                            <li>영문</li>
-                            <li>독문</li>
-                            <li>불문</li>
+                            <li><a href="">영문</a></li>
+                            <li><a href="">독문</a></li>
+                            <li><a href="">불문</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">법과대학</a>
+                        <a href="" id="univ">법과대학</a>
                         <ul class="sub">
-                            <li>법대</li>
+                            <li><a href="">법대</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">사범대학</a>
+                        <a href="" id="univ">사범대학</a>
                         <ul class="sub">
-                            <li>수교</li>
-                            <li>국교</li>
-                            <li>영교</li>
-                            <li>역교</li>
-                            <li>교육</li>
+                            <li><a href="">수교</a></li>
+                            <li><a href="">국교</a></li>
+                            <li><a href="">영교</a></li>
+                            <li><a href="">역교</a></li>
+                            <li><a href="">교육</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">미술대학</a>
+                        <a href="" id="univ">미술대학</a>
                         <ul class="sub">
-                            <li>동양</li>
-                            <li>회화</li>
-                            <li>판화</li>
-                            <li>조소</li>
-                            <li>목조</li>
-                            <li>예술</li>
-                            <li>금디</li>
-                            <li>도유</li>
-                            <li>섬디</li>
-                            <li>미자전</li>
-                            <li>시디</li>
-                            <li>산디</li>
+                            <li><a href="">동양</a></li>
+                            <li><a href="">회화</a></li>
+                            <li><a href="">판화</a></li>
+                            <li><a href="">조소</a></li>
+                            <li><a href="">목조</a></li>
+                            <li><a href="">예술</a></li>
+                            <li><a href="">금디</a></li>
+                            <li><a href="">도유</a></li>
+                            <li><a href="">섬디</a></li>
+                            <li><a href="">미자전</a></li>
+                            <li><a href="">시디</a></li>
+                            <li><a href="">산디</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">경제학부</a>
+                        <a href="" id="univ">경제학부</a>
                         <ul class="sub">
-                            <li>경제</li>
+                            <li><a href="">경제</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">공연예술</a>
+                        <a href="" id="univ">공연예술</a>
                         <ul class="sub">
-                            <li>뮤지컬</li>
-                            <li>실음</li>
+                            <li><a href="">뮤지컬</a></li>
+                            <li><a href="">실음</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">자율전공</a>
+                        <a href="" id="univ">자율전공</a>
                         <ul class="sub">
-                            <li>자전</li>
+                            <li><a href="">자전</a></li>
                         </ul>
                     </li>
                     </ul>
@@ -133,18 +143,16 @@
                     </div>
                     <div>
                         <div class="contentbox">
-                            <p>추천을 많이 받은 게시물의 제목</br>추천을 많이 받은 게시물의 제목<br/>추천을 많이 받은 게시물의 제목</p>
+                            <p id="cmt">추천을 많이 받은 게시물의 제목</br>추천을 많이 받은 게시물의 제목<br/>추천을 많이 받은 게시물의 제목</p>
                         </div>
                         <div class="tabs">
                             <div class="thumb">
-                                <a href="#">
-                                    <div id=thumbimg></div>                                   
-                                </a>
-                               <div id="thumb_num"> 252</div>
+                                    <button id=thumbimg onclick="javascript:testInnerHTML();"></button>                                   
+                               <div id="thumb_num">252</div>
+                            </div>    
+                            <div class="list"> 
+                                <button id="list" onclick="javascript:comment();"> </button>
                             </div>
-                            <a href="#">
-                                <img src="icon_list_white.png" width="30px">
-                            </a>
                         </div>
                         <div class="photo"></div>
                     </div>
@@ -156,12 +164,15 @@
                             <div class="thumb">
                                 <div class="thumb">
                                     <a href="#">
-                                        <div id=thumbimg></div>                                   
+                                        <button id="thumbimg"></button>                                     
                                     </a>
                                    <div id="thumb_num"> 31</div>
                                 </div>
                             </div>
-                            <a href="#"><img src="icon_list_white.png" width="30px"></a>
+                            <div class="list">
+                                <button id="list">
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -177,7 +188,10 @@
                                    <div id="thumb_num"> 22</div>
                                 </div>
                             </div>
-                            <a href="#"><img src="icon_list_white.png" width="30px"></a>
+                            <div class="list">
+                                <button id="list">
+                                </button>
+                            </div>
                         </div>
                         <div class="photo"></div>
                     </div>
@@ -194,7 +208,10 @@
                                    <div id="thumb_num"> 17</div>
                                 </div>
                             </div>
-                            <a href="#"><img src="icon_list_white.png" width="30px"></a>
+                            <div class="list">
+                                <button id="list">
+                                </button>
+                            </div>
                         </div>
                         <div class="photo"></div>
                     </div>
@@ -211,7 +228,10 @@
                                    <div id="thumb_num"> 15</div>
                                 </div>
                             </div>
-                            <a href="#"><img src="icon_list_white.png" width="30px"></a>
+                            <div class="list">
+                                <button id="list">
+                                </button>
+                            </div>
                         </div>
                         <div class="photo"></div>
                     </div>
