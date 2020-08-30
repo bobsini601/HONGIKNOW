@@ -216,7 +216,13 @@ nav > ul {
     text-align: center;
 }
 nav li:hover{
-    background-color:#ACBFD9;
+    background-color:rgba(9,31,64,1);
+}
+nav li:hover #univ {
+    color: white;
+}
+.sub li:hover a{
+    color: white;
 }
 nav li {
     display:block;
@@ -332,7 +338,10 @@ nav > ul :hover .sub{
     padding: 15px;
 }
 .sidebar li:hover{
-    background-color:#ACBFD9;
+    background-color:rgba(9,31,64,1);
+}
+.sidebar li:hover a{
+    color: white;
 }
 #onlywhite:hover{
     text-decoration: none;
