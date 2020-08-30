@@ -151,6 +151,15 @@ padding-top: 50px;
     width: 20px;
     height: 20px;
 }
+button{
+    width: 30px;
+    height: 30px;
+    background: url(icon_list_white.png) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: none;
+    border: 0px;
+}
 nav {
     display: block;
     position: relative;
@@ -182,14 +191,19 @@ nav > ul :hover .sub{
     border: 0px;
 }
 nav li:hover{
-    background-color:#ACBFD9;
+    background-color:rgba(9,31,64,1);
+}
+nav li:hover #univ {
+    color: white;
+}
+.sub li:hover a{
+    color: white;
 }
 nav li {
     display:block;
     padding: 0 30px;
     line-height: 60px;
     height:65.5px;
-    /*border:1px solid black;*/
 }
 .sidebar{
     width:200px;
@@ -202,7 +216,10 @@ nav li {
     margin-top:10px;
 }
 .sidebar li:hover{
-    background-color:#ACBFD9;
+    background-color:rgba(9,31,64,1);
+}
+.sidebar li:hover a{
+    color: white;
 }
 #onlywhite:hover{
     text-decoration: none;
