@@ -288,7 +288,7 @@ nav > ul {
     text-align: center;
 }
 nav li a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 nav li {
     display:block;
@@ -420,7 +420,7 @@ nav > ul :hover .sub{
     padding: 15px;
 }
 .sidebar li:hover{
-    text-decoration:underline;
+    text-decoration: none;
 }
 #profile{
     top:0px;
