@@ -292,12 +292,20 @@ nav > ul :hover .sub{
 }
 #banner{
     width: 200px;
-    height: 140px;
+    height: 122px;
     overflow: visible;
     border-right-style: groove;
     border-bottom-style: groove;
     margin-top: 10px;
     text-align: center;
+    overflow: hidden;
+}
+#banner img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+#banner:hover img{
+    transform: scale(1.1);
 }
 .button{
     background-color: white;
