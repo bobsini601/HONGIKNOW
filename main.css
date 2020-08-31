@@ -119,6 +119,9 @@ padding-top: 50px;
     text-align: center;
     z-index: 1;
 }
+.contentbox >p >a{
+    color: white;
+}
 .tabs{
     display: flex;
     flex-direction:row;
