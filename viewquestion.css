@@ -51,6 +51,9 @@ td{
 #blank{
     width:390px;
 }
+header > #logo{
+padding-top: 50px;
+}
 .mybox{
     width: 520px;
     height: 100px;
