@@ -227,6 +227,7 @@ footer{
 }
 .postbtn {
   float: right;
+  margin-right:35px;
 }
 
 .postbtn > button {
