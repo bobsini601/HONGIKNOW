@@ -1,8 +1,0 @@
-title: HONGIKNOW
-name: test hongiknow
-description: community web site
-author: sinhee park
-analutics: UA-96559329-1
-exclude:[_design,README]
-url:"https://bobsini601.github.io"
-baseurl:"/HONGIKNOW"
