@@ -1,18 +1,10 @@
-html {
-  font-family: sans-serif;
+html, body {
+  font-family: 'Noto Sans CJK KR', sans-serif;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: none;
-  position: absolute;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
-body {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 1);
-  overflow: auto;
+  height: 100%;
 }
 
 a {
@@ -27,12 +19,17 @@ ul, ol {
 }
 
 header {
+  position: relative;
+  /* width: auto; */
+  height: 200px;
+  /* padding-top: 10px;
+  z-index: 1; */
+}
+
+#logo {
   position: absolute;
-  width: 100%;
-  height: 130px;
-  padding-top: 10px;
-  /* display: flex;
-  justify-content: center; */
+  top: 50px;
+  left: 150px;
 }
 
 input {
@@ -96,8 +93,8 @@ input:checked[type="checkbox"]:before {
   background-color: white;
   text-align: center;
   line-height: 27px;
-  left: 780px;
-  top: 20px;
+  left: 950px;
+  top: 70px;
 }
 
 .mybox>div {
@@ -110,21 +107,28 @@ input:checked[type="checkbox"]:before {
 }
 
 .container {
-  overflow: auto;
+  margin: 0;
+  position: relative;
+  left: 150px;
+  top: -150px;
+  /* width: auto; */
+  /* overflow: auto;
   justify-content: center;
-  position: absolute;
-  overflow: visible;
+  position: absolute; */
 }
 
 .article {
-  position: absolute;
+  z-index: 1;
+  position: relative;
   width: 942px;
   height: 1447px;
   margin-left: 180px;
   margin-top: 171px;
+  padding-bottom: 100px;
 }
 
 .content {
+  z-index: 1;
   width: 840px;
   height: 500px;
   margin-left: 10px;
@@ -285,7 +289,7 @@ nav {
   text-align: justify;
   position: absolute;
   width: 180px;
-  top: 171px;
+  top: 45px;
   overflow: visible;
   transform: matrix(1, 0, 0, 1, 0, 0);
   background-color: rgba(248, 248, 248, 1);
@@ -332,17 +336,19 @@ nav>ul :hover .sub {
   display: none;
   position: absolute;
   padding: 0px;
-  background-color: white;
+  background-color: rgba(248, 248, 248, 1);
   width: 80%;
   left: -0.5%;
   border-top: 1px solid;
   border-right: 1px solid;
   border-left: 0.5px solid;
+  z-index: 2;
 }
 
 .sub li {
   border-bottom: 0.5px solid;
   height: 64px;
+  background-color: rgba(248, 248, 248, 1);
 }
 
 .sidebar {
@@ -352,9 +358,8 @@ nav>ul :hover .sub {
   text-align: center;
   width: 180px;
   height: 610px;
-  top: 170px;
+  top: 45px;
   background-color: rgba(248, 248, 248, 1);
-  border: 1px solid;
   box-sizing: border-box;
   /* font-size: 15px; */
   overflow: visible;
@@ -362,16 +367,14 @@ nav>ul :hover .sub {
 }
 
 #searchbox {
+  position: absolute;
   width: 180px;
   height: 35px;
   fill: rgba(255, 255, 255, 1);
   border-bottom: 1px solid black;
-  top: 130px;
   /* font-size: 20px; */
   /* display: inline-block; */
-  position: absolute;
   overflow: visible;
-  left: 0px;
 }
 
 #side1 {
@@ -379,7 +382,6 @@ nav>ul :hover .sub {
   width: 180px;
   height: 350px;
   overflow: visible;
-  border-bottom: 1px solid;
 }
 
 #pro_name {
@@ -419,6 +421,7 @@ nav>ul :hover .sub {
 
 #side2 {
   overflow: visible;
+  border-top: 1px solid;
 }
 
 #side2 ul {
@@ -440,8 +443,8 @@ nav>ul :hover .sub {
   color: white;
 }
 
-#onlywhite :hover {
-  color: white;
+#onlywhite {
+  pointer-events: none;
 }
 
 #onlywhite {
@@ -505,14 +508,9 @@ nav>ul :hover .sub {
 }
 
 footer {
-  display: flex;
-  float: right;
-  padding: 20px;
-}
-
-.icon_list li {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(240, 240, 240);
 }
