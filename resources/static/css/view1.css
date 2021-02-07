@@ -92,7 +92,7 @@ input:checked[type="checkbox"]:before {
 }
 
 .mybox {
-  position: relative;
+  position: absolute;
   width: 420px;
   height: 39px;
   background-color: white;
